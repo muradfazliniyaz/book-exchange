@@ -1,14 +1,13 @@
 import { ComponentContact } from "./ComponentContact";
-import {NavBar} from "./Navbar";
+import { NavBar } from "./Navbar";
 
 const Contact = () => {
-    return (
-        <>
-        <NavBar/>
-        <ComponentContact/>
-        </>
-    );
-  };
-  
-  export { Contact };
-  
+  return (
+    <>
+      <NavBar />
+      <ComponentContact />
+    </>
+  );
+};
+
+export { Contact };
