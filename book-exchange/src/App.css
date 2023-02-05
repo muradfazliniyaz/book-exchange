@@ -5,6 +5,11 @@
   align-items: center;
 }
 
+.cardimage {
+  box-sizing: border-box;
+
+}
+
 .search-field {
   width: 550px;
   border-radius: 5px;
@@ -20,11 +25,10 @@
   color: #FFFFFF;
   align-items: center;
   text-decoration: none;
+  border-radius: 5px;
 }
 
-
-
-img {
+.nav-img {
   width: 300px;
 }
 
@@ -33,7 +37,6 @@ img {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-
 }
 
 .navbar-container {
@@ -43,11 +46,24 @@ img {
   align-items: center;
   height: 40px;
   background-color: #668C03;
+  color: #FFFFFF;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  background-color: #668C03;
+  color: #FFFFFF;
+  margin-top: 20px;
 }
 
 .col-container {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
 .home-div {
@@ -61,5 +77,19 @@ img {
   color: #668C03;
   justify-content: center;
   align-items: center;
-  
+  text-align: center;
+  margin-top: 20px;
+}
+
+.about {
+  text-align: center;
+}
+
+.about-img {
+  margin-top: 20px;
+}
+
+.contact-row {
+  margin-top: 20px;
+  background-color: red;
 }

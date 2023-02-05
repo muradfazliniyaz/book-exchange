@@ -4,7 +4,9 @@ import { Home } from "./Components/Home";
 import { About } from "./Components/About";
 import { Books } from "./Components/Books";
 import { Contact } from "./Components/Contact";
-import { createBrowserRouter, RouterProvider, Link } from "react-router-dom";
+import { Login } from "./Components/Login";
+import { SignIn } from "./Components/SignIn";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const router = createBrowserRouter([
   {
@@ -23,6 +25,14 @@ const router = createBrowserRouter([
   {
     path: "Contact",
     element: <Contact />,
+  },
+  {
+    path: "Login",
+    element: <Login />,
+  },
+  {
+    path: "SignIn",
+    element: <SignIn />,
   },
 ]);
 

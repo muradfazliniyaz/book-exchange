@@ -31,7 +31,8 @@ function ComponentBooks(args) {
             Jack London
           </CardSubtitle>
           <CardText>
-            Jack London aslem Amerikalı bir yazar olup asıl adı John Griffith Chaney' dir. 1876 yılında San Francisco' da doğmuştur.
+            Jack London aslem Amerikalı bir yazar olup asıl adı John Griffith
+            Chaney' dir. 1876 yılında San Francisco' da doğmuştur.
           </CardText>
           <Button>Button</Button>
         </CardBody>
