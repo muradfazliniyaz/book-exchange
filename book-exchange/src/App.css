@@ -1,38 +1,95 @@
-.App {
+.card {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.cardimage {
+  box-sizing: border-box;
+
+}
+
+.search-field {
+  width: 550px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  border: 2px solid #668C03;
+}
+
+.nav-button {
+  width: 90px;
+  margin-right: 40px;
+  text-align: center;
+  background-color: #668C03;
+  color: #FFFFFF;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.nav-img {
+  width: 300px;
+}
+
+.navbar-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  background-color: #668C03;
+  color: #FFFFFF;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  background-color: #668C03;
+  color: #FFFFFF;
+  margin-top: 20px;
+}
+
+.col-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.home-div {
+  margin-top: 30px;
+  width: 50%;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  color: #668C03;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.about {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.about-img {
+  margin-top: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.contact-row {
+  margin-top: 20px;
+  background-color: red;
 }

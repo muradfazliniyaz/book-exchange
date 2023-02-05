@@ -1,10 +1,8 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import {
-  Nav,
-  NavItem,
-  NavLink,
-} from "reactstrap";
+import { Nav, NavItem } from "reactstrap";
+import { Link } from "react-router-dom";
+import logo from "../images/book-exchange-logo.jpeg";
 
 function NavBar(args) {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,26 +10,51 @@ function NavBar(args) {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <div>
-      <img
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpuOFKS0tdfaK4l0C6ki9BmRyux2vQUkZleg&usqp=CAU"
-        alt="hicoders"
-      />
-      <Nav pills>
+    <>
+      <div className="navbar-div">
+        <a href="/">
+          <img src={logo} alt="" className="nav-img" />
+        </a>
+        <div>
+          <label htmlFor="input-search"></label>
+          <input
+            type="search"
+            name="search"
+            id="search"
+            className="search-field"
+            placeholder="Title, Author, Keyword, ISBN, User"
+          />
+          <button type="submit" className="nav-button">
+            Search
+          </button>
+        </div>
+        <Link type="login" className="nav-button" to="/Login">
+          Login
+        </Link>
+      </div>
+      <Nav className="navbar-container">
         <NavItem>
-          <NavLink href="/">Home</NavLink>
+          <Link className="nav-button" to="/">
+            HOME
+          </Link>
         </NavItem>
         <NavItem>
-          <NavLink href="/About">About</NavLink>
+          <Link className="nav-button" to="/About">
+            ABOUT
+          </Link>
         </NavItem>
         <NavItem>
-          <NavLink href="Books">Books</NavLink>
+          <Link className="nav-button" to="/Books">
+            BOOKS
+          </Link>
         </NavItem>
         <NavItem>
-          <NavLink href="Contact">Contact</NavLink>
+          <Link className="nav-button" to="/Contact">
+            CONTACT
+          </Link>
         </NavItem>
       </Nav>
-    </div>
+    </>
   );
 }
 
