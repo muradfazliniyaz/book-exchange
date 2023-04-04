@@ -78,7 +78,7 @@ const SignIn = () => {
                   type="password"
                 />
               </FormGroup>{" "}
-              <Button>Sign In</Button>
+              <Button to="/UserPage">Sign In</Button>
             </Form>
             <h6>
               Already Signed Up?{" "}

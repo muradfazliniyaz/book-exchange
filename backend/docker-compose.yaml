@@ -1,0 +1,25 @@
+version: '3.9'
+services:
+  mysql-booky:
+    container_name: mysql-booky
+    image: mysql
+    ports:
+      - 3306:3306
+    restart: always
+    environment:
+      - MYSQL_ROOT_PASSWORD=hicoders_12
+      - MYSQL_PASSWORD=hicoders_12
+      - MYSQL_USER=hicoders
+      - MYSQL_DATABASE=booky
+    volumes:
+      - ./mysqlDB:/var/lib/meinsql/data
+  phpmyadmin-booky:
+    image: phpmyadmin/phpmyadmin
+    container_name: pma-booky
+    depends_on:
+        - mysql-booky
+    environment:
+        PMA_HOST: mysql-booky
+    restart: always
+    ports:
+        - 7070:80

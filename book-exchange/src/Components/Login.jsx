@@ -2,7 +2,6 @@ import { NavBar } from "./Navbar";
 import { Footer } from "./Footer";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Link } from "react-router-dom";
-
 import {
   CardImg,
   Row,
@@ -57,7 +56,9 @@ const Login = () => {
                   type="password"
                 />
               </FormGroup>{" "}
+              <Link className="nav-button" to="/UserPage">
               <Button>Log In</Button>
+          </Link>
             </Form>
             <h6>
               Not a Member?{" "}
@@ -65,7 +66,7 @@ const Login = () => {
                 Sign In
               </Link>
             </h6>
-            <a href="">Fogot Your Password</a>
+            <a href="">Forgot Your Password</a>
           </div>
         </Col>
         <Col xs="2"></Col>
@@ -76,3 +77,7 @@ const Login = () => {
 };
 
 export { Login };
+
+
+
+
