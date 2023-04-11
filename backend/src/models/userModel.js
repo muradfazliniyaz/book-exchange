@@ -26,7 +26,7 @@ const User = sequelize.define(
       allowNull: false,
       unique: true,
     },
-    sex: {
+    gender: {
       type: DataTypes.STRING(10),
       allowNull: false,
     },
@@ -35,6 +35,10 @@ const User = sequelize.define(
       allowNull: false,
     },
     maritalStatus: {
+      type: DataTypes.STRING(50),
+      allowNull: false,
+    },
+    password: {
       type: DataTypes.STRING(50),
       allowNull: false,
     },

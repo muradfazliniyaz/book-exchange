@@ -1,20 +1,4 @@
-// import mysql from "mysql2/promise";
 import User from "../models/userModel.js";
-
-// async function connectToDatabase() {
-//   try {
-//     const connection = await mysql.createConnection({
-//       host: "localhost",
-//       user: "hicoders",
-//       password: "hicoders_12",
-//       database: "booky",
-//     });
-//     console.log("Connected to the database!");
-//     return connection;
-//   } catch (error) {
-//     console.error("Error connecting to the database:", error);
-//   }
-// }
 
 async function getAllUsers() {
   try {

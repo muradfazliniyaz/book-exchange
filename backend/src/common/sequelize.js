@@ -14,8 +14,7 @@ const sequelize = new Sequelize("booky", "hicoders", "hicoders_12", {
 const connectToDatabase = async () => {
   try {
     await sequelize.authenticate();
-    await Book.sync({ force: true });
-    await User.sync({ force: true });
+    await sequelize.sync({alter: true})
     console.log("Connected!");
   } catch (error) {
     console.log("Error", error);
